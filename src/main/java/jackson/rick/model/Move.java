@@ -9,5 +9,10 @@ public class Move {
             {1, 1},
             {-1, -1},
             {-1, 0}
-    }
+    };
+
+    int[][] checkPossibleMoves(int[] position) {}
+
+
+
 }
