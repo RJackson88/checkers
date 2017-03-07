@@ -3,14 +3,14 @@ package jackson.rick.model;
 /**
  * Created by rickjackson on 3/6/17.
  */
-public class Piece {
+public class OldPiece {
     public final Color color;
     private int x;
     private int y;
     private boolean captured = false;
     private boolean king = false;
     
-    public Piece(Color color, int x, int y) {
+    public OldPiece(Color color, int x, int y) {
         this.color = color;
         this.x = x;
         this.y = y;
