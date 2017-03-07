@@ -7,8 +7,9 @@ public interface WhiteMove {
     
     default int northWestSimpleMove(int start) {
         checkNorthSimpleMove(start);
-        
-        if (start < 4 || (start % 4 == 0 && (start / 4) % 2 != 0)) {
+    
+        if (start < 4
+            || (start % 4 == 0 && (start / 4) % 2 != 0)) {
             return -1;
         } else if ((start / 4) % 2 == 0) {
             return start - 4;
@@ -19,8 +20,9 @@ public interface WhiteMove {
     
     default int northEastSimpleMove(int start) {
         checkNorthSimpleMove(start);
-        
-        if (start < 4 || ((start + 1) % 4 == 0 && ((start + 1) / 4) % 2 == 0)) {
+    
+        if (start < 4
+            || (((start + 1) % 4 == 0 && ((start + 1) / 4) % 2 != 0))) {
             return -1;
         } else if ((start / 4) % 2 == 0) {
             return start - 3;
