@@ -1,6 +1,5 @@
 package jackson.rick.model.piece;
 
-import jackson.rick.model.move.WhiteMove;
 import org.junit.Before;
 import org.junit.Test;
 import static org.junit.Assert.*;
@@ -9,7 +8,7 @@ import static org.junit.Assert.*;
  * Created by rickjackson on 3/7/17.
  */
 public class WhiteManTest {
-    private WhiteMove white;
+    private WhiteMan white;
     
     @Before
     public void setup() {
